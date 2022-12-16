@@ -28,9 +28,7 @@ class _CityScreenState extends State<CityScreen> {
               Align(
                 alignment: Alignment.topLeft,
                 child: TextButton(
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
+                  onPressed: () {},
                   child: const Icon(
                     Icons.arrow_back_ios,
                     size: 50.0,
@@ -39,20 +37,10 @@ class _CityScreenState extends State<CityScreen> {
               ),
               Container(
                 padding: const EdgeInsets.all(20.0),
-                child: TextField(
-                  style: const TextStyle(
-                    color: Colors.black,
-                  ),
-                  decoration: kTextFieldInputDecoration,
-                  onChanged: (value) {
-                    cityName = value;
-                  },
-                ),
+                child: null,
               ),
               TextButton(
-                onPressed: () {
-                  Navigator.pop(context, cityName);
-                },
+                onPressed: () {},
                 child: const Text(
                   'Get Weather',
                   style: kButtonTextStyle,

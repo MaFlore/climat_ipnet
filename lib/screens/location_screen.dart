@@ -67,7 +67,7 @@ class _LocationScreenState extends State<LocationScreen> {
                 children: <Widget>[
                   TextButton(
                     onPressed: () async {
-                      var weatherData = await weather.getLocationWeather();
+                      var weatherData = await getLocationWeather();
                       updateUI(weatherData);
                     },
                     child: const Icon(
@@ -87,7 +87,7 @@ class _LocationScreenState extends State<LocationScreen> {
                       );
                       if (typedName != null) {
                         var weatherData =
-                            await weather.getCityWeather(typedName);
+                            await getCityWeather(typedName);
                         updateUI(weatherData);
                       }
                     },
